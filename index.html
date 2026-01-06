@@ -2,34 +2,19 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>D&D AI Adventure</title>
+    <title>Papinator - Geniul Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <div id="background-layer"></div>
-        
-        <div id="battle-arena">
-            <div class="fighter" id="player">
-                <img src="https://via.placeholder.com/150?text=Erou" id="player-img">
-                <div class="hp-bar"><div id="player-hp" class="hp-fill"></div></div>
-                <p>Eroul Tău</p>
-            </div>
-
-            <div id="vs">VS</div>
-
-            <div class="fighter" id="enemy">
-                <img src="https://via.placeholder.com/150?text=Monstru" id="enemy-img">
-                <div class="hp-bar"><div id="enemy-hp" class="hp-fill"></div></div>
-                <p>Inamic</p>
-            </div>
+    <div class="game-container">
+        <h1>Papinator</h1>
+        <div id="character-image">🧞‍♂️</div>
+        <div id="question-box">
+            <p id="text">Gândește-te la un personaj, iar eu îl voi ghici!</p>
         </div>
-
-        <div id="console">
-            <p>Aventura începe într-o pădure întunecată...</p>
+        <div id="options">
+            <button onclick="startGame()">Începe Jocul</button>
         </div>
-
-        <button onclick="startBattle()">Atacă!</button>
     </div>
     <script src="script.js"></script>
 </body>
